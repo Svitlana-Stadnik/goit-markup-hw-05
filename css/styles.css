@@ -414,10 +414,6 @@ h2 {
     background-color: #31d0aa;
 }
 
-/*.footer-subscribe {
-    gap: 80px;
-}*/
-
 .subscribe {
     font-weight: 500;
     line-height: 1.5;
@@ -442,6 +438,14 @@ h2 {
     display: flex;
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    outline: transparent;
 }
 
 .footer-input::placeholder {
@@ -527,7 +531,7 @@ h2 {
     display: flex;
 }
 
-.backdrop:not(.is-open) .modal {
+.backdrop:not(.is-open) .modal {      /* is-open */
     transform: translate(-50%, -50%);
 }
 
@@ -549,17 +553,24 @@ h2 {
 }
 
 .modal-title {
-    font-weight: 500;
+    position: fixed;
     text-align: center;
+    top: 72px;
+    left: 24px;
+    font-weight: 500;
     color: #2e2f42;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 48px;
-    margin: 0 0 16px;
+    width: calc(100% - 48px);
+    margin-bottom: 16px;
 }
 
 .modal-form {
+    position: absolute;
+    top: 112px;
+    left: 24px;
+    width: calc(100% - 48px);
     display: flex;
     flex-direction: column;
 }
@@ -625,6 +636,9 @@ h2 {
 }
 
 .modal-input:focus {
+    border: 1px solid #4d5ae5;
+}
+.modal-text-area:focus {
     border: 1px solid #4d5ae5;
 }
 
@@ -707,7 +721,6 @@ h2 {
     justify-content: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 24px;
     margin: 0 auto;
 }
 
