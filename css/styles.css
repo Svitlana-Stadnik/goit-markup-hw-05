@@ -390,7 +390,10 @@ h2 {
 .footer-wrapper {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+}
+
+.footer-info-wrapper {
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -424,9 +427,6 @@ h2 {
     background-color: #31d0aa;
 }
 
-.footer .footer-wrapper{
-    gap: 80px;  
-}
 .footer-subscribe {
     margin-left: auto;
 }
